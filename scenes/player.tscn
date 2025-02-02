@@ -39,19 +39,19 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fi80"]
-size = Vector2(8, 9)
+[sub_resource type="CircleShape2D" id="CircleShape2D_76x1n"]
+radius = 5.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ta1ck")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -16)
+position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_3yfyn")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.432124
+frame_progress = 0.0773985
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -8.5)
-shape = SubResource("RectangleShape2D_4fi80")
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_76x1n")
